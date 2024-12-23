@@ -166,7 +166,7 @@ public class OrderingACardTest {
     }
     @Test
     void SendFormWithCheckboxNoPhone() {
-        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Иван Иванов");
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Иванов Иван");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("[class='button__content']")).click();
@@ -175,5 +175,3 @@ public class OrderingACardTest {
     }
 
 }
-
-
